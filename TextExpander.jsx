@@ -31,7 +31,7 @@ function TextExpander({children, expand, styleText, styleBox, styleButton, howSh
             <span style={styleText}>
                 {mode ? short : full}
             </span>
-            <span role={"button"} onClick={handleClick} style={mode ? styleButton : {color: 'blueviolet', cursor: 'pointer'}}>&nbsp;&nbsp;{btnTxt}</span>
+            <span role={"button"} onClick={handleClick} style={mode ? styleButton : {color: 'blueviolet', cursor: 'pointer'}}>&nbsp;&nbsp;{mode ? btnTxt : 'Show Less'}</span>
         </div>
         )
 }
